@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.caixa-principal{
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/background.png);
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.Portifólio{
+    color: azure;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.Portifólio span{
+    color: #f9004d;
+}
+
+li{
+    color: azure;
+    list-style: none;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #f9004d;
+    transition: 0.5s;
+}
+
+.Meu-Nome {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+h1{
+    color: azure;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+h1 span {
+    color: #f9004d;
+}
+
+.Meu-Nome h3 {
+    color: azure;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 60px 15%;
+    background-color: black;
+}
+
+section img{
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    border: 5px solid #f9004d;
+    margin-right: 30px;
+}
+
+.fundo-foto {
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    border: 1px solid  azure;
+    background-color: black;
+    margin-right: 60px;
+}
+
+section div h2 {
+    color: azure;
+    font-size: 75px;
+}
+
+section div p {
+    color: azure;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+section div button{
+    color: azure;
+    background-color: #f9004d;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+section div button:hover{
+    background-color: #191919;
+    border: 3px solid #f9004d;
+    transition: 0.5s;
+}
+
+.projetos {
+    background-color: #191919;
+    padding: 50px 0 100px;
+       
+}
+
+.projetos h2 {
+    color: azure;
+    font-size: 75px;
+    text-align: center;
+}
+
+.card {
+    background-color: black;
+    height: 435px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+}
+
+.card img {
+    height: 100px;
+}
+
+.card h5 {
+    color: azure;
+    font-size: 24px;
+}
+
+.card p {
+    color: azure;   
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+
+.card a {
+    background-color: #f9004d;
+    color: azure;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    transition: 0.5s;
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px ;
+   
+    
+
+}
