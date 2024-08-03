@@ -33,18 +33,30 @@ nav {
     color: #f9004d;
 }
 
-li{
+li, .nav-menu{
     color: azure;
     list-style: none;
     font-size: 30px;
     display: inline-block;
     margin-right: 30px;
     cursor: pointer;
+    text-decoration: 0;
 }
 
 li:hover {
     color: #f9004d;
     transition: 0.5s;
+}
+
+.nav-menu:hover {
+    color: #f9004d;
+    transition: 0.5s;
+}
+
+.Meu-Nome {
+    position: absolute;
+    top: 50%;
+    left: 7%;
 }
 
 .Meu-Nome {
@@ -66,58 +78,6 @@ h1 span {
 .Meu-Nome h3 {
     color: azure;
     font-size: 25px;
-}
-
-section {
-    display: flex;
-    align-items: center;
-    padding: 60px 15%;
-    background-color: black;
-}
-
-section img{
-    height: 600px;
-    width: 600px;
-    border-radius: 100%;
-    border: 5px solid #f9004d;
-    margin-right: 30px;
-}
-
-.fundo-foto {
-    height: 600px;
-    width: 600px;
-    border-radius: 100%;
-    border: 1px solid  azure;
-    background-color: black;
-    margin-right: 60px;
-}
-
-section div h2 {
-    color: azure;
-    font-size: 75px;
-}
-section div p {
-    color: azure;
-    font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-
-section div button{
-    color: azure;
-    background-color: #f9004d;
-    height: 50px;
-    width: 180px;
-    font-size: 18px;
-    border: none;
-    border-radius: 26px;
-    cursor: pointer;
-}
-
-section div button:hover{
-    background-color: #191919;
-    border: 3px solid #f9004d;
-    transition: 0.5s;
 }
 
 .projetos {

@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
 }
 
-.caixa-principal{
+.caixa-principal {
     height: 100vh;
     width: 100%;
     background-image: url(assets/background.png);
@@ -23,26 +23,33 @@ nav {
     padding-top: 25px;
 }
 
-.Portifólio{
+.Portifólio {
     color: azure;
     font-size: 45px;
     font-weight: 500;
 }
 
-.Portifólio span{
+.Portifólio span {
     color: #f9004d;
 }
 
-li{
+li,
+.nav-menu {
     color: azure;
     list-style: none;
     font-size: 30px;
     display: inline-block;
     margin-right: 30px;
     cursor: pointer;
+    text-decoration: 0;
 }
 
 li:hover {
+    color: #f9004d;
+    transition: 0.5s;
+}
+
+.nav-menu:hover {
     color: #f9004d;
     transition: 0.5s;
 }
@@ -53,7 +60,7 @@ li:hover {
     left: 7%;
 }
 
-h1{
+h1 {
     color: azure;
     font-size: 75px;
     font-weight: 700;
@@ -68,6 +75,10 @@ h1 span {
     font-size: 25px;
 }
 
+.section{
+    display: flex;
+    flex-direction: row;
+}
 section {
     display: flex;
     align-items: center;
@@ -75,7 +86,7 @@ section {
     background-color: black;
 }
 
-section img{
+section img {
     height: 600px;
     width: 600px;
     border-radius: 100%;
@@ -87,7 +98,7 @@ section img{
     height: 600px;
     width: 600px;
     border-radius: 100%;
-    border: 1px solid  azure;
+    border: 1px solid azure;
     background-color: black;
     margin-right: 60px;
 }
@@ -96,6 +107,7 @@ section div h2 {
     color: azure;
     font-size: 75px;
 }
+
 section div p {
     color: azure;
     font-size: 24px;
@@ -103,7 +115,7 @@ section div p {
     margin-bottom: 60px;
 }
 
-section div button{
+section div button {
     color: azure;
     background-color: #f9004d;
     height: 50px;
@@ -114,7 +126,7 @@ section div button{
     cursor: pointer;
 }
 
-section div button:hover{
+section div button:hover {
     background-color: #191919;
     border: 3px solid #f9004d;
     transition: 0.5s;
@@ -123,7 +135,7 @@ section div button:hover{
 .projetos {
     background-color: #191919;
     padding: 50px 0 100px;
-       
+
 }
 
 .projetos h2 {
@@ -151,9 +163,9 @@ section div button:hover{
 }
 
 .card p {
-    color: azure;   
+    color: azure;
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .card a {
@@ -173,10 +185,10 @@ section div button:hover{
 .card-projetos {
     display: flex;
     justify-content: space-around;
-    margin-top: 100px ;
+    margin-top: 100px;
 }
 
-footer{
+footer {
     background-color: black;
     padding: 100px 0 120px;
     display: flex;
@@ -184,7 +196,7 @@ footer{
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 footer h5 {
@@ -199,11 +211,11 @@ footer p {
 }
 
 
-.social img{
+.social img {
     height: 50px;
     margin: 0 10px;
     border-radius: 10px;
-    
+
 }
 
 .social a {
@@ -211,10 +223,296 @@ footer p {
     height: 145px;
     width: 145px;
     border-radius: 50%;
-    
+
 }
 
 .social a :hover {
     transform: scale(1.4);
     transition: 0.5s;
+}
+
+
+@media(max-width: 1050px) {
+    .caixa-principal {
+
+        height: 1050px;
+        width: 1050px;
+        padding-bottom: 350px;
+
+    }
+
+
+
+    nav {
+        height: 30px;
+        width: 30px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 0;
+        padding-top: 20px;
+        font-size: 20;
+    }
+
+
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    h1,
+    h3 {
+        font-size: 50px;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+/*sectionm*/
+
+
+    .fundo-foto,  section img {
+        height: 550px;
+        width: 550px;
+    }
+
+    
+    
+   
+    section {
+        display: flex;        
+        align-items: center;
+        height: 650px;
+        width: 1050px;
+        
+
+       
+    }
+
+   
+}
+
+
+@media(max-width: 970px) {
+    .caixa-principal {
+
+        height: 1050px;
+        width: 1050px;
+        padding-bottom: 350px;
+
+    }
+
+
+
+    nav {
+        height: 30px;
+        width: 30px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding-top: 20px;
+        font-size: 20;
+    }
+
+    .fundo-foto,  section img {
+        height: 350px;
+        width: 350px;
+    }
+
+    section div h2 {
+        
+        font-size: 55px;
+    }
+    
+    section div p {
+        
+        font-size: 14px;
+    }    
+
+
+}
+
+@media(max-width: 915px){
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section div p {
+        margin-right: 393px;
+    }
+}
+
+
+@media(max-width: 620px) {
+    .caixa-principal {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 620px;
+        width: 620px;
+        padding-bottom: 550px;
+        
+    }
+
+    li{
+        justify-content: center;
+        font-size: 10px;
+    }
+
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 10px;
+        width: 10px;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;        
+        top: 80px;
+        left: 10%;
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+
+
+    section div p {
+        margin-right: 681px;
+    }
+}
+
+
+/*Mobile menor largura */
+/*Mobile menor largura */
+/*Mobile menor largura */
+
+@media(max-width: 375px) {
+    .caixa-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 418px;
+        width: 418px;
+        padding-bottom: 550px;
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 30px;
+        width: 30px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li,
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    h1,
+    h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fundo-foto {
+        height: 150px;
+        width: 150px;
+    }
+
+    .fundo-foto img {
+        height: 150px;
+        width: 150px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 418px;
+        width: 418px;
+        padding-bottom: 850px;
+    }
+
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 418px;
+        width: 418px;
+        padding-bottom: 1850px;
+
+
+    }
+
+    .card-projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    footer {
+        height: 418px;
+        width: 418px;
+
+    }
+
 }
